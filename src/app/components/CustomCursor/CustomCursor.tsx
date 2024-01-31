@@ -34,9 +34,10 @@ const CustomCursor = () => {
       xPercent: -20,
       yPercent: -20
     })
-  }, [])
 
-  window.addEventListener('mousemove', moveCursor)
+    window.addEventListener('mousemove', moveCursor)
+  }, [])  
+
   return(
     <div>
       <div ref={cursorRef} className={styles.cursor}></div>
